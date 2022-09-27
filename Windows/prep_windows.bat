@@ -29,8 +29,8 @@ sc config "rasauto" start=disabled
 sc config "termservice" start=disabled
 
 # folina
-reg delete "HKEY_CLASSES_ROOT\ms-msdt" /f
+reg delete "HKEY_CLASSES_ROOT\ms-msdt" /va /f
 
 # enableAuthenticodeVerification64
-reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Wintrust\Config"/v EnableCertPaddingCheck/t REG_DWORD/d 1 /va /f
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Wintrust\Config"/v EnableCertPaddingCheck/t REG_DWORD/d 1 /f
 reg add "HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Cryptography\Wintrust\Config"/v EnableCertPaddingCheck/t REG_DWORD/d 1 /f
