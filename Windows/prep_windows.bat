@@ -32,5 +32,5 @@ sc config "termservice" start=disabled
 reg delete "HKEY_CLASSES_ROOT\ms-msdt" /f
 
 # enableAuthenticodeVerification64
-reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Wintrust\Config"/v EnableCertPaddingCheck/t REG_DWORD/d 1 /f
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Wintrust\Config"/v EnableCertPaddingCheck/t REG_DWORD/d 1 /va /f
 reg add "HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Cryptography\Wintrust\Config"/v EnableCertPaddingCheck/t REG_DWORD/d 1 /f
