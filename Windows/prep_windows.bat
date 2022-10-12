@@ -7,7 +7,7 @@ net accounts /minpwlen:12
 # disable telemetry
 sc config "diagtrack" start=disabled
 sc config "dmwappushservice" start=disable
-reg add HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection /v AllowTelemtery /t REG_DWORD/d 0 /f
+reg add HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection /v AllowTelemtry /t REG_DWORD/d 0 /f
 
 # delete onedrive (version 64)
 TASKKILL /f /im OneDrive.exe
